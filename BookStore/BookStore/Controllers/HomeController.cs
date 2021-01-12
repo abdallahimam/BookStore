@@ -6,11 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Controllers
 {
-    public class HomeController : Controller
-    {
-        public string Index()
-        {
-            return "Book Store App";
-        }
-    }
+   public class HomeController : Controller
+   {
+      public ViewResult Index()
+      {
+         return View();
+      }
+
+      public ViewResult About()
+      {
+         return View();
+      }
+   }
 }
